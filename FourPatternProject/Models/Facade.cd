@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FourPatternProject.Models.RobotApp">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAQQAAAAIAAAAQgAAAEAAAAAAAAAAAAAAAAADAAIAA=</HashCode>
+      <FileName>Models\RobotApp.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parser" />
+      <Field Name="robot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FourPatternProject.Models.CommandParser">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\CommandParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FourPatternProject.Models.IRobot">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAII=</HashCode>
+      <FileName>Models\IRobot.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
