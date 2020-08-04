@@ -30,6 +30,7 @@ namespace FourPatternProject
             InitializeComponent();
             app = new RobotApp(4,-4,4,-4,0,0);
             app.OnRobotMove += RobotMove;
+            Status.Text = "Hello World";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
