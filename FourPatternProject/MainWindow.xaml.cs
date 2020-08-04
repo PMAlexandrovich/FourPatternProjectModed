@@ -28,7 +28,7 @@ namespace FourPatternProject
         public MainWindow()
         {
             InitializeComponent();
-            app = new RobotApp(4,-4,4,-4,0,0);
+            app = new RobotApp(4,-4,4,-4,1,1);
             app.OnRobotMove += RobotMove;
         }
 
