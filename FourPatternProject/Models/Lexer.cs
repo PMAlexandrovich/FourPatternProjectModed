@@ -10,7 +10,8 @@ namespace FourPatternProject.Models
     {
         Dictionary<string, string[]> rules = new Dictionary<string, string[]>()
         {
-            { "id", new string[]{"while","end"} },
+            { "id", new string[]{"while"} },
+            {"endid", new string[]{ "end" } },
             {"command", new string[]{"up","left","down","right"}},
             {"endcom",  new string[]{ ";"} },
             {"check",new string[]{"on left free","on right free", "from above free", "from below free", "on left wall", "on right wall", "from above wall", "from below wall" }},
@@ -38,6 +39,11 @@ namespace FourPatternProject.Models
                 string temp = current.ToString();
                 if(temp == Environment.NewLine)
                 {
+                    current.Clear();
+                }
+                if(temp == "end")
+                {
+                    output.Add(new Token("endid", "end"));
                     current.Clear();
                 }
                 foreach (var id in rules["id"])
