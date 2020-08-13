@@ -68,6 +68,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Lexer.cs" />
     <Compile Include="Models\RobotApp.cs" />
     <Compile Include="Models\CommandParser.cs" />
     <Compile Include="Models\Expression.cs" />
