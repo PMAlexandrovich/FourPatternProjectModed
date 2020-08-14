@@ -16,7 +16,7 @@ namespace FourPatternProject.Models
         int startY;
 
         private IRobot robot;
-        private CommandParser parser;
+        private NewParser parser;
 
         public event EventHandler<RobotMoveEventArgs> OnRobotMove;
 
@@ -31,7 +31,7 @@ namespace FourPatternProject.Models
             var robot = new Robot();
             robot.OnRobotMove += RobotMove;
             this.robot = new RobotWithDelay(robot);
-            parser = new CommandParser();
+            parser = new NewParser();
         }
 
         private void RobotMove(object sender, RobotMoveEventArgs e)
