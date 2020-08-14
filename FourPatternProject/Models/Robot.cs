@@ -11,6 +11,7 @@ namespace FourPatternProject.Models
     {
         private int x = 0;
         private int y = 0;
+        private RobotApp app;
 
         public event EventHandler<RobotMoveEventArgs> OnRobotMove;
 
@@ -57,5 +58,25 @@ namespace FourPatternProject.Models
             OnRobotMove(this, new RobotMoveEventArgs() { X = X, Y = Y });
         }
 
+        public bool CanMove(Diraction diraction)
+        {
+            bool result = false;
+            switch (diraction)
+            {
+                case Diraction.Up:
+                    result = app.IsFreePosition(x, y + 1);
+                    break;
+                case Diraction.Down:
+                    result = app.IsFreePosition(x, y - 1);
+                    break;
+                case Diraction.Left:
+                    result = app.IsFreePosition(x-1, y);
+                    break;
+                case Diraction.Right:
+                    result = app.IsFreePosition(x+1, y + 1);
+                    break;
+            }
+            return result;
+        }
     }
 }

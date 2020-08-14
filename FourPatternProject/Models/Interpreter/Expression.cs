@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace FourPatternProject.Models
 {
-    class MoveRight:Expression
+    abstract class Expression<T>
     {
-        public override void Interpret(IRobot robot)
-        {
-            robot.Right();
-        }
+        public abstract T Interpret(IRobot robot);
     }
 }

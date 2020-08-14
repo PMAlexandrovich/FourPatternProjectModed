@@ -13,5 +13,6 @@ namespace FourPatternProject.Models
         void Left();
         void Right();
         void GoTo(int x, int y);
+        bool CanMove(Diraction diraction);
     }
 }

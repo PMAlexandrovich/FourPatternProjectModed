@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FourPatternProject.Models.Sequence">
-    <Position X="7.75" Y="1.75" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAggEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Sequence.cs</FileName>
+      <FileName>Models\Interpreter\Sequence.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FourPatternProject.Models.MoveDown">
@@ -14,7 +14,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\MoveDown.cs</FileName>
+      <FileName>Models\Interpreter\MoveDown.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FourPatternProject.Models.MoveLeft">
@@ -24,7 +24,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\MoveLeft.cs</FileName>
+      <FileName>Models\Interpreter\MoveLeft.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FourPatternProject.Models.MoveRight">
@@ -34,7 +34,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\MoveRight.cs</FileName>
+      <FileName>Models\Interpreter\MoveRight.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FourPatternProject.Models.MoveUp">
@@ -44,14 +44,14 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\MoveUp.cs</FileName>
+      <FileName>Models\Interpreter\MoveUp.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FourPatternProject.Models.Expression">
+  <Class Name="FourPatternProject.Models.Expression&lt;T&gt;">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Expression.cs</FileName>
+      <FileName>Models\Interpreter\Expression.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

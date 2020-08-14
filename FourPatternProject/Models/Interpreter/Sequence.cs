@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace FourPatternProject.Models
 {
-    class Sequence:Expression
+    class Sequence:Expression<NotReturnValue>
     {
-        Expression first;
-        Expression second;
+        Expression<NotReturnValue> first;
+        Expression<NotReturnValue> second;
 
-        public Sequence(Expression first, Expression second)
+        public Sequence(Expression<NotReturnValue> first, Expression<NotReturnValue> second)
         {
             this.first = first;
             this.second = second;
         }
 
-        public override void Interpret(IRobot robot)
+        public override NotReturnValue Interpret(IRobot robot)
         {
             first.Interpret(robot);
             second.Interpret(robot);
+            return new NotReturnValue();
         }
     }
 }

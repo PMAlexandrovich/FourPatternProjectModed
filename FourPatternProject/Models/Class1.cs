@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace FourPatternProject.Models
 {
-    abstract class Expression
+    enum Diraction
     {
-        public abstract void Interpret(IRobot robot);
+        Up,
+        Down,
+        Left,
+        Right
     }
 }

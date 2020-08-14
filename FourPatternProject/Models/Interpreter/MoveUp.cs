@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace FourPatternProject.Models
 {
-    class MoveLeft:Expression
+    class MoveUp:Expression<NotReturnValue>
     {
-        public override void Interpret(IRobot robot)
+        public override NotReturnValue Interpret(IRobot robot)
         {
-            robot.Left();
+            robot.Up();
+            return new NotReturnValue();
         }
     }
 }

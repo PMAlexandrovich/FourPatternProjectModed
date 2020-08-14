@@ -54,5 +54,14 @@ namespace FourPatternProject.Models
         {
             robot.GoTo(startX, startY);
         }
+
+        public bool IsFreePosition(int x, int y)
+        {
+            if (x >= minX && x <= maxX && y >= minY && y <= maxY)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

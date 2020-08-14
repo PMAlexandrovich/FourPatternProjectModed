@@ -68,21 +68,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Interpreter\checks\FromAboveWall.cs" />
+    <Compile Include="Models\Interpreter\checks\FromAboveFree.cs" />
+    <Compile Include="Models\Interpreter\checks\FromBelowWall.cs" />
+    <Compile Include="Models\Interpreter\checks\FromBelowFree.cs" />
+    <Compile Include="Models\Interpreter\checks\OnLeftWall.cs" />
+    <Compile Include="Models\Interpreter\checks\OnLeftFree.cs" />
+    <Compile Include="Models\Interpreter\checks\OnRightWall.cs" />
+    <Compile Include="Models\Interpreter\checks\OnRightFree.cs" />
     <Compile Include="Models\Lexer.cs" />
     <Compile Include="Models\NewParser.cs" />
+    <Compile Include="Models\NotReturnValue.cs" />
     <Compile Include="Models\RobotApp.cs" />
     <Compile Include="Models\CommandParser.cs" />
-    <Compile Include="Models\Expression.cs" />
+    <Compile Include="Models\Interpreter\Expression.cs" />
     <Compile Include="Models\IRobot.cs" />
-    <Compile Include="Models\MoveDown.cs" />
-    <Compile Include="Models\MoveLeft.cs" />
-    <Compile Include="Models\MoveRight.cs" />
-    <Compile Include="Models\MoveUp.cs" />
+    <Compile Include="Models\Interpreter\MoveDown.cs" />
+    <Compile Include="Models\Interpreter\MoveLeft.cs" />
+    <Compile Include="Models\Interpreter\MoveRight.cs" />
+    <Compile Include="Models\Interpreter\MoveUp.cs" />
     <Compile Include="Models\Robot.cs" />
     <Compile Include="Models\RobotDecorator.cs" />
     <Compile Include="Models\RobotMoveEventArgs.cs" />
     <Compile Include="Models\RobotWithDelay.cs" />
-    <Compile Include="Models\Sequence.cs" />
+    <Compile Include="Models\Interpreter\Sequence.cs" />
+    <Compile Include="Models\Interpreter\While.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
