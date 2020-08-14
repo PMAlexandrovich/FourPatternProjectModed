@@ -37,14 +37,21 @@ namespace FourPatternProject.Models
                 }
                 current.Append(input[i]);
                 string temp = current.ToString();
+                if(temp == " ")
+                {
+                    current.Clear();
+                    continue;
+                }
                 if(temp == Environment.NewLine)
                 {
                     current.Clear();
+                    continue;
                 }
                 if(temp == "end")
                 {
                     output.Add(new Token("endid", "end"));
                     current.Clear();
+                    continue;
                 }
                 foreach (var id in rules["id"])
                 {
@@ -52,6 +59,7 @@ namespace FourPatternProject.Models
                     {
                         output.Add(new Token("id", temp));
                         current.Clear();
+                        continue;
                     }
                 }
 
@@ -61,6 +69,7 @@ namespace FourPatternProject.Models
                     {
                         output.Add(new Token("command", temp));
                         current.Clear();
+                        continue;
                     }
                 }
                 foreach (var check in rules["check"])
@@ -69,6 +78,7 @@ namespace FourPatternProject.Models
                     {
                         output.Add(new Token("check", temp));
                         current.Clear();
+                        continue;
                     }
                 }
             }
