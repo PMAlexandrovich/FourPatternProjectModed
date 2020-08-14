@@ -43,5 +43,10 @@ namespace FourPatternProject.Models
             robot.GoTo(x, y);
             Wait();
         }
+
+        public override bool CanMove(Diraction diraction)
+        {
+            return robot.CanMove(diraction);
+        }
     }
 }
