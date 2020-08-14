@@ -16,7 +16,9 @@ namespace FourPatternProject.Models
         {
             Lexer lexer = new Lexer();
             index = 0;
-            tokens = new Stack<Token>(lexer.Handle(code).AsEnumerable());
+            var lexerResult = lexer.Handle(code);
+            lexerResult.Reverse();
+            tokens = new Stack<Token>(lexerResult.AsEnumerable());
             return MakeTree(BuildTree(),0);
         }
 
@@ -59,7 +61,7 @@ namespace FourPatternProject.Models
 
         private Expression<NotReturnValue> MakeTree(List<Expression<NotReturnValue>> expressions, int index)
         {
-            if(index == expressions.Count)
+            if(index == expressions.Count-1)
             {
                 return expressions[index];
             }
