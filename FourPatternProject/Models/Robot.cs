@@ -13,6 +13,11 @@ namespace FourPatternProject.Models
         private int y = 0;
         private RobotApp app;
 
+        public Robot(RobotApp app)
+        {
+            this.app = app;
+        }
+
         public event EventHandler<RobotMoveEventArgs> OnRobotMove;
 
         public int X
@@ -73,7 +78,7 @@ namespace FourPatternProject.Models
                     result = app.IsFreePosition(x-1, y);
                     break;
                 case Diraction.Right:
-                    result = app.IsFreePosition(x+1, y + 1);
+                    result = app.IsFreePosition(x+1, y);
                     break;
             }
             return result;

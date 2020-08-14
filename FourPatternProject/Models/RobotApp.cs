@@ -28,7 +28,7 @@ namespace FourPatternProject.Models
             this.minY = minY;
             this.startX = startX;
             this.startY = startY;
-            var robot = new Robot();
+            var robot = new Robot(this); ;
             robot.OnRobotMove += RobotMove;
             this.robot = new RobotWithDelay(robot);
             parser = new NewParser();

@@ -10,7 +10,7 @@ namespace FourPatternProject.Models.Interpreter.checks
     {
         public override bool Interpret(IRobot robot)
         {
-            return !robot.CanMove(Diraction.Left);
+            return !robot.CanMove(Diraction.Right);
         }
     }
 }
